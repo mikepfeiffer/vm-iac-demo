@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Admin Username": {
+            "value": "sysadmin"
+        },
+        "Admin Password": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/fexxxx15c-a26b-4a35-xxx-51b02cdd2f43/resourceGroups/core-infra/providers/Microsoft.KeyVault/vaults/kvcs0xxx2020"
+                },
+                "secretName": "AdminPass"
+            }
+        }
+    }
+}
