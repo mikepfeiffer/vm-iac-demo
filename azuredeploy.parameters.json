@@ -8,7 +8,7 @@
         "Admin Password": {
             "reference": {
                 "keyVault": {
-                    "id": "/subscriptions/fexxxx15c-a26b-4a35-xxx-51b02cdd2f43/resourceGroups/core-infra/providers/Microsoft.KeyVault/vaults/kvcs0xxx2020"
+                    "id": "/subscriptions/863a3a4a-74b0-480d-b14d-c2a0fd715473/resourceGroups/Vaults/providers/Microsoft.KeyVault/vaults/cskv02292020"
                 },
                 "secretName": "AdminPass"
             }
