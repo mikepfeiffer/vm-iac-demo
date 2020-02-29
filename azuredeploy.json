@@ -16,7 +16,7 @@
       }
     },
     "variables": {
-      "storageAccount": "[uniqueString('xxxxxxx')]"
+      "storageAccount": "[uniqueString(resourceGroup().id)]"
     },
     "resources": [
       {
@@ -42,7 +42,7 @@
           "properties": {
               "publicIPAllocationMethod": "Dynamic",
               "dnsSettings": {
-                  "domainNameLabel": "[uniqueString('xxxxx')]"
+                  "domainNameLabel": "[uniqueString(resourceGroup().id)]"
               }
           }
       },
